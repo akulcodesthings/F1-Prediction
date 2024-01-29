@@ -1,0 +1,12 @@
+constructor_standings table
++------------------------+--------------+------+-----+---------+----------------+------------------------------------------+
+| Field                  | Type         | Null | Key | Default | Extra          | Description                              |
++------------------------+--------------+------+-----+---------+----------------+------------------------------------------+
+| constructorStandingsId | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key                              |
+| raceId                 | int(11)      | NO   |     | 0       |                | Foreign key link to races table          |
+| constructorId          | int(11)      | NO   |     | 0       |                | Foreign key link to constructors table   |
+| points                 | float        | NO   |     | 0       |                | Constructor points for season            |
+| position               | int(11)      | YES  |     | NULL    |                | Constructor standings position (integer) |
+| positionText           | varchar(255) | YES  |     | NULL    |                | Constructor standings position (string)  |
+| wins                   | int(11)      | NO   |     | 0       |                | Season win count                         |
++------------------------+--------------+------+-----+---------+----------------+------------------------------------------+

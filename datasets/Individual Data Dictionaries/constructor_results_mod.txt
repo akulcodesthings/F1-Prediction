@@ -1,0 +1,10 @@
+constructor_results table
++----------------------+--------------+------+-----+---------+----------------+----------------------------------------+
+| Field                | Type         | Null | Key | Default | Extra          | Description                            |
++----------------------+--------------+------+-----+---------+----------------+----------------------------------------+
+| constructorResultsId | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key                            |
+| raceId               | int(11)      | NO   |     | 0       |                | Foreign key link to races table        |
+| constructorId        | int(11)      | NO   |     | 0       |                | Foreign key link to constructors table |
+| points               | float        | YES  |     | NULL    |                | Constructor points for race            |
+| status               | varchar(255) | YES  |     | NULL    |                | "D" for disqualified (or null)         |
++----------------------+--------------+------+-----+---------+----------------+----------------------------------------+

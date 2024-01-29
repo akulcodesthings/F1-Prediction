@@ -1,0 +1,23 @@
+results table
++-----------------+--------------+------+-----+---------+----------------+---------------------------------------------+
+| Field           | Type         | Null | Key | Default | Extra          | Description                                 |
++-----------------+--------------+------+-----+---------+----------------+---------------------------------------------+
+| resultId        | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key                                 |
+| raceId          | int(11)      | NO   |     | 0       |                | Foreign key link to races table             |
+| driverId        | int(11)      | NO   |     | 0       |                | Foreign key link to drivers table           |
+| constructorId   | int(11)      | NO   |     | 0       |                | Foreign key link to constructors table      |
+| number          | int(11)      | YES  |     | NULL    |                | Driver number                               |
+| grid            | int(11)      | NO   |     | 0       |                | Starting grid position                      |
+| position        | int(11)      | YES  |     | NULL    |                | Official classification, if applicable      |
+| positionText    | varchar(255) | NO   |     |         |                | Driver position string e.g. "1" or "R"      |
+| positionOrder   | int(11)      | NO   |     | 0       |                | Driver position for ordering purposes       |
+| points          | float        | NO   |     | 0       |                | Driver points for race                      |
+| laps            | int(11)      | NO   |     | 0       |                | Number of completed laps                    |
+| time            | varchar(255) | YES  |     | NULL    |                | Finishing time or gap                       |
+| milliseconds    | int(11)      | YES  |     | NULL    |                | Finishing time in milliseconds              |   
+| fastestLap      | int(11)      | YES  |     | NULL    |                | Lap number of fastest lap                   |
+| rank            | int(11)      | YES  |     | 0       |                | Fastest lap rank, compared to other drivers |
+| fastestLapTime  | varchar(255) | YES  |     | NULL    |                | Fastest lap time e.g. "1:27.453"            |
+| fastestLapSpeed | varchar(255) | YES  |     | NULL    |                | Fastest lap speed (km/h) e.g. "213.874"     |
+| statusId        | int(11)      | NO   |     | 0       |                | Foreign key link to status table            |
++-----------------+--------------+------+-----+---------+----------------+---------------------------------------------+

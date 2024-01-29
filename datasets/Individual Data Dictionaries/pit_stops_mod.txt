@@ -1,0 +1,12 @@
+pit_stops table
++--------------+--------------+------+-----+---------+-------+-----------------------------------+
+| Field        | Type         | Null | Key | Default | Extra | Description                       |
++--------------+--------------+------+-----+---------+-------+-----------------------------------+
+| raceId       | int(11)      | NO   | PRI | NULL    |       | Foreign key link to races table   |
+| driverId     | int(11)      | NO   | PRI | NULL    |       | Foreign key link to drivers table |
+| stop         | int(11)      | NO   | PRI | NULL    |       | Stop number                       |
+| lap          | int(11)      | NO   |     | NULL    |       | Lap number                        |
+| time         | time         | NO   |     | NULL    |       | Time of stop e.g. "13:52:25"      |
+| duration     | varchar(255) | YES  |     | NULL    |       | Duration of stop e.g. "21.783"    |
+| milliseconds | int(11)      | YES  |     | NULL    |       | Duration of stop in milliseconds  |
++--------------+--------------+------+-----+---------+-------+-----------------------------------+

@@ -1,0 +1,14 @@
+circuits table
++------------+--------------+------+-----+---------+----------------+---------------------------+
+| Field      | Type         | Null | Key | Default | Extra          | Description               |
++------------+--------------+------+-----+---------+----------------+---------------------------+
+| circuitId  | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key               |
+| circuitRef | varchar(255) | NO   |     |         |                | Unique circuit identifier |
+| name       | varchar(255) | NO   |     |         |                | Circuit name              |
+| location   | varchar(255) | YES  |     | NULL    |                | Location name             |
+| country    | varchar(255) | YES  |     | NULL    |                | Country name              |
+| lat        | float        | YES  |     | NULL    |                | Latitude                  |
+| lng        | float        | YES  |     | NULL    |                | Longitude                 |
+| alt        | int(11)      | YES  |     | NULL    |                | Altitude (metres)         |
+| url        | varchar(255) | NO   | UNI |         |                | Circuit Wikipedia page    |
++------------+--------------+------+-----+---------+----------------+---------------------------+

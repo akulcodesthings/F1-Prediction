@@ -1,0 +1,12 @@
+driver_standings table
++-------------------+--------------+------+-----+---------+----------------+-------------------------------------+
+| Field             | Type         | Null | Key | Default | Extra          | Description                         |
++-------------------+--------------+------+-----+---------+----------------+-------------------------------------+
+| driverStandingsId | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key                         |
+| raceId            | int(11)      | NO   |     | 0       |                | Foreign key link to races table     |
+| driverId          | int(11)      | NO   |     | 0       |                | Foreign key link to drivers table   |
+| points            | float        | NO   |     | 0       |                | Driver points for season            |
+| position          | int(11)      | YES  |     | NULL    |                | Driver standings position (integer) |
+| positionText      | varchar(255) | YES  |     | NULL    |                | Driver standings position (string)  |
+| wins              | int(11)      | NO   |     | 0       |                | Season win count                    |
++-------------------+--------------+------+-----+---------+----------------+-------------------------------------+

@@ -1,0 +1,10 @@
+constructors table
++----------------+--------------+------+-----+---------+----------------+-------------------------------+
+| Field          | Type         | Null | Key | Default | Extra          | Description                   |
++----------------+--------------+------+-----+---------+----------------+-------------------------------+
+| constructorId  | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key                   |
+| constructorRef | varchar(255) | NO   |     |         |                | Unique constructor identifier |
+| name           | varchar(255) | NO   | UNI |         |                | Constructor name              |
+| nationality    | varchar(255) | YES  |     | NULL    |                | Constructor nationality       |
+| url            | varchar(255) | NO   |     |         |                | Constructor Wikipedia page    |
++----------------+--------------+------+-----+---------+----------------+-------------------------------+

@@ -1,0 +1,11 @@
+lap_times table
++--------------+--------------+------+-----+---------+-------+-----------------------------------+
+| Field        | Type         | Null | Key | Default | Extra | Description                       |
++--------------+--------------+------+-----+---------+-------+-----------------------------------+
+| raceId       | int(11)      | NO   | PRI | NULL    |       | Foreign key link to races table   |
+| driverId     | int(11)      | NO   | PRI | NULL    |       | Foreign key link to drivers table |
+| lap          | int(11)      | NO   | PRI | NULL    |       | Lap number                        |
+| position     | int(11)      | YES  |     | NULL    |       | Driver race position              |
+| time         | varchar(255) | YES  |     | NULL    |       | Lap time e.g. "1:43.762"          |
+| milliseconds | int(11)      | YES  |     | NULL    |       | Lap time in milliseconds          |
++--------------+--------------+------+-----+---------+-------+-----------------------------------+

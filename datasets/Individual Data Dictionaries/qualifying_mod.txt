@@ -1,0 +1,14 @@
+qualifying table
++---------------+--------------+------+-----+---------+----------------+----------------------------------------+
+| Field         | Type         | Null | Key | Default | Extra          | Description                            |
++---------------+--------------+------+-----+---------+----------------+----------------------------------------+
+| qualifyId     | int(11)      | NO   | PRI | NULL    | auto_increment | Primary key                            |
+| raceId        | int(11)      | NO   |     | 0       |                | Foreign key link to races table        |
+| driverId      | int(11)      | NO   |     | 0       |                | Foreign key link to drivers table      |
+| constructorId | int(11)      | NO   |     | 0       |                | Foreign key link to constructors table |
+| number        | int(11)      | NO   |     | 0       |                | Driver number                          |
+| position      | int(11)      | YES  |     | NULL    |                | Qualifying position                    |
+| q1            | varchar(255) | YES  |     | NULL    |                | Q1 lap time e.g. "1:21.374"            |
+| q2            | varchar(255) | YES  |     | NULL    |                | Q2 lap time                            |
+| q3            | varchar(255) | YES  |     | NULL    |                | Q3 lap time                            |
++---------------+--------------+------+-----+---------+----------------+----------------------------------------+
